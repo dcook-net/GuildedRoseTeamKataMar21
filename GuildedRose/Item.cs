@@ -8,4 +8,12 @@ namespace GuildedRose
 
         public int Quality { get; set; }
     }
+    
+    public static class ItemExtensions
+    {
+        public static void IncreaseQuality(this Item i)
+        {
+            i.Quality += 1;
+        }
+    }
 }
